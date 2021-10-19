@@ -17,4 +17,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: http-server
+          start: npx http-server
