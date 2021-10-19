@@ -12,6 +12,7 @@ context('Axe Core accessibility tests', function() {
             cy.visit(Cypress.env('endpoints')[url])
             cy.injectAxe()
             cy.checkA11y(null, Cypress.env('A11Y_OPTIONS'))
+            
         })
     })
 })
