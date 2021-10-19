@@ -1,0 +1,20 @@
+{
+    "baseUrl": "http://localhost:8080",
+    "video": false,
+    "reporter": "./node_modules/cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "./reporter.json"
+    },
+    "env": {
+        "A11Y_OPTIONS": {
+            "runOnly": {
+                "type": "tag",
+                "values": ["wcag2a", "wcag2aa"]
+            }
+        },
+        "endpoints": {
+            "index": "/index.html",
+            "pagetwo": "/pagetwo.html"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "cypressaccessibilitypipeline",
+  "version": "1.0.0",
+  "description": "demo app with pipeline that runs accessibility tests with Cypress.io",
+  "main": "index.js",
+  "scripts": {
+    "cyopen": "./node_modules/.bin/cypress open",
+    "cyrun": "./node_modules/.bin/cypress run"
+  },
+  "author": "jordnkr",
+  "license": "ISC",
+  "devDependencies": {
+    "axe-core": "^4.3.3",
+    "cypress": "^8.6.0",
+    "cypress-axe": "^0.13.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.1.3",
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "dependencies": {
+    "http-server": "^13.0.2"
+  }
+}
