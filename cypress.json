@@ -12,7 +12,7 @@
                 "values": ["wcag2a", "wcag2aa"]
             }
         },
-        "endpoints": {
+        "urls": {
             "index": "/index.html",
             "pagetwo": "/pagetwo.html"
         }
