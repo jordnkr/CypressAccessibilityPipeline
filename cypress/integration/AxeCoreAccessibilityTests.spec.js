@@ -7,9 +7,9 @@ context('Axe Core accessibility tests', function() {
         })
     })*/
     
-    Object.keys(Cypress.env('endpoints')).forEach((url) => {
+    Object.keys(Cypress.env('urls')).forEach((url) => {
         it ('Run axe-core against: ' + url, () => {
-            cy.visit(Cypress.env('endpoints')[url])
+            cy.visit(Cypress.env('urls')[url])
             cy.injectAxe()
             cy.checkA11y(null, Cypress.env('A11Y_OPTIONS'))
             
