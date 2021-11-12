@@ -12,10 +12,9 @@ To get this application up and running, you will need [NPM](https://www.npmjs.co
 - open a new command window and change directory to your cloned path: `cd /your/cloned/directory/path`
 - use the command: `npm install`
 
-> **Note:** If you incorporate cypress tests with your own project, and you already have your own local server configured, you do not need to do this part. You will just need to update the `'baseUrl'` variable in the `cypress.json` file to point at your localhost URL.
-
 ## Server and Running Tests
 In order to run the tests, you will first need to start an HTTP server.
+> **Note:** A server is not necessary to run Cypress tests themselves, but this project is all-inclusive, so the server is needed to serve the html pages that the tests are run against. If you incorporate cypress tests with your own project, and you already have your own local server configured (or you're targeting a web URL), you do not need to do this part. You will just need to update the `'baseUrl'` variable in the `cypress.json` file to point at your localhost URL
 
 ### Starting the Server
 This can be accomplished using [http-server](https://www.npmjs.com/package/http-server). It was installed with the dev dependencies, so all you need to do is:
